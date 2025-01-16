@@ -3,13 +3,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #F8C8DC;
+    background-color: #fde1ed;
+    margin: 0;
+    padding: 0;
 }
 
 .header_text {
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
     font-size: 50px;
     font-weight: bold;
+    -webkit-text-stroke: 1px black; 
     color: white;
     text-align: center;
     margin-top: 20px;
@@ -20,4 +23,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .header_text {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .gif_container img {
+        width: 80%;
+        height: auto;
+    }
 }

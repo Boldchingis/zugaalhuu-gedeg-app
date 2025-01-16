@@ -3,7 +3,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-color: #F8C8DC;
+    background-color: #fde1ed;
+    margin: 0;
+    padding: 0;
 }
 
 #noButton {
@@ -18,9 +20,10 @@ body {
 }
 
 .header_text {
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
     font-size: 40px;
     font-weight: bold;
+    -webkit-text-stroke: 1px black; 
     color: white;
     text-align: center;
     margin-top: 20px;
@@ -37,7 +40,6 @@ body {
 }
 
 .btn {
-   
     background-color: #FFB6C1;
     color: white;
     padding: 15px 32px;
@@ -57,4 +59,32 @@ body {
     align-items: center;
     height: auto;
     width: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .header_text {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 14px;
+        width: 80%;
+        margin: 8px 0;
+    }
+
+    #noButton, #yesButton {
+        margin: 0;
+    }
+
+    .gif_container img {
+        width: 80%;
+        height: auto;
+    }
 }
